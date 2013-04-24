@@ -479,11 +479,11 @@ module Sunspot #:nodoc:
 
         def perform_index_tasks
           if @marked_for_auto_indexing
-            solr_index
             remove_instance_variable(:@marked_for_auto_indexing)
+            solr_index
           elsif @marked_for_auto_removal
-            solr_remove_from_index
             remove_instance_variable(:@marked_for_auto_removal)
+            solr_remove_from_index
           end
         end
       end
