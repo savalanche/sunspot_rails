@@ -5,9 +5,11 @@ $:.unshift(lib) unless $:.include?(lib)
 
 require 'sunspot/version'
 
+version = '2.0.0.pre.130115.sava.2'
+
 Gem::Specification.new do |s|
   s.name        = "sunspot_rails"
-  s.version     = Sunspot::VERSION
+  s.version     = version #Sunspot::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Mat Brown', 'Peer Allan', 'Dmitriy Dzema', 'Benjamin Krause', 'Marcel de Graaf', 'Brandon Keepers', 'Peter Berkenbosch',
                   'Brian Atkinson', 'Tom Coleman', 'Matt Mitchell', 'Nathan Beyer', 'Kieran Topping', 'Nicolas Braem', 'Jeremy Ashkenas',
